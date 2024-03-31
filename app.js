@@ -14,7 +14,7 @@ const createWindow = function(){
 
     win.loadFile('src/templates/index.html')
     win.on('closed', ()=>{
-        win.quite
+       app.quit()
     })
 }
 
@@ -32,6 +32,7 @@ app.whenReady().then(()=>{
 
 app.on('window-all-closed', ()=>{
     if(process.platform !== 'darvin'){
-        app.quite
+        app.quit()
     }
 })
+

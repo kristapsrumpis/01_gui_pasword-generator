@@ -3,9 +3,11 @@ body{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px;
+    grid-template-rows: 50px 50px 1fr;
     grid-template-areas: 
-        "t t t t t t t t t t t t"
+        ". t t t t t t t t t t ."
+        ". . . . . . . . . . . ."
+        ". o o o o o . . . . . ."
     ;
 }
 .heder{
@@ -14,4 +16,8 @@ body{
     font-size: 30px;
     font-weight: bold;
     grid-area: t;
+}
+.options{
+    grid-area: o;
+    height: 200px;
 }

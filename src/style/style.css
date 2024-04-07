@@ -3,11 +3,13 @@ body{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px 1fr;
+    grid-template-rows: 50px 50px 1fr 1fr 50px;
     grid-template-areas: 
         ". t t t t t t t t t t ."
         ". . . . . . . . . . . ."
-        ". o o o o o . . . . . ."
+        ". o o o o o o2 o2 o2 o2 o2 o2"
+        ". a a a a a a a a a a ."
+        ". . . . . . . . . . . ."
     ;
 }
 .heder{
@@ -19,5 +21,26 @@ body{
 }
 .options{
     grid-area: o;
-    height: 200px;
+}
+.options-2{
+    grid-area: o2;
+}
+.output{
+    grid-area: a;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 50px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.output button{
+    font-size: 24px;
+}
+#password {
+    background-color: red;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
 }

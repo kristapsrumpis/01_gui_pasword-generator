@@ -56,7 +56,7 @@ generateBtn.addEventListener('click', function(){
 
     let characters = passwordSymbolList(lethersLowercaseBoolean,lettersUppercaseBoolean,numbersBoolean,symbolsBoolean)
 
-    if(!notToUse == ''){
+    if(notToUse != ''){
         let newCharacters = characters
 
         console.log(notToUse, notToUse.length)
